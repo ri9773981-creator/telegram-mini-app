@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Telegram Mini App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    <h1>Welcome to My Telegram Mini App</h1>
+    <button id="show-ad">Show Ad</button>
+
+    <script>
+      // Telegram এর web app অবজেক্ট চালু
+      const tg = window.Telegram?.WebApp;
+      if (tg) tg.expand(); // ফুলস্ক্রিনে নেবে
+
+      // Monetag SDK (তুমি পরে আসল লিংক বসাবে)
+      // উদাহরণ:
+      // <script src="https://cdn.monetag.com/monetag-sdk-tma.js"></script>
+
+      document.getElementById('show-ad').addEventListener('click', () => {
+        alert("এখানে Monetag ad দেখাবে (যখন SDK বসাবে)");
+      });
+    </script>
+  </body>
+</html>
